@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login_page{
+    background-image: url('../../images/backgroundImage.png');
+    // background-color: aqua;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main_div{
+        height: 80%;
+        width: 80%;
+        background-color: white;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .left{
+            .screen_logo{
+                height: 350px;
+            }
+
+        }
+        .middle {
+            height: 80%;
+            width: 2px;
+            background-color: rgb(231, 228, 228);
+            border-radius: 2px;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            max-width: fit-content;
+            width: 100%;
+                position: relative;
+
+            // align-items: center;
+            .horizontal_line{
+                height: 2px;
+                width: 40px;
+                background-color: rgb(137, 52, 216);
+                border-radius: 10px;
+               margin-bottom: 5px;
+
+            }
+            .title{
+                font-weight: 500;
+                font-size: 15px;
+                margin-bottom: 30px;
+
+            }
+            .input_field{
+                width: 400px;
+                padding: 15px;
+                outline: none;
+                border-radius: 40px;
+                border: 1px solid lightgray;
+                // position: relative;
+                margin-bottom: 30px;
+                color: lightgray;
+              
+            }
+            .icon1{
+                position: absolute;
+                font-size: 25px;
+                right: 5%;
+                top: 20%;
+                color: lightgray;
+            }
+            .icon2{
+                position: absolute;
+                font-size: 25px;
+                right: 5%;
+                top: 42%;
+                color: lightgray;
+            }
+            .button{
+                width: 100%;
+                padding: 15px;
+                border-radius:40px;
+                outline: none;
+                border: none;
+                background-color: rgb(137, 52, 216);
+                color: white;
+                letter-spacing: 5px;
+            }
+            .forget_pass{
+                font-weight: 500;
+                font-size: 15px;
+                margin-bottom: 15px;
+                text-align: center;
+                margin-top: 20px;
+                color: lightgray;
+            }
+            .get_help{
+                font-weight: 500;
+                font-size: 15px;
+                // margin-bottom: 30px;
+                text-align: center;
+                // margin-top: 20px;
+               color: rgb(137, 52, 216);
+            }
+            .privacy_policy{
+                font-weight: 400;
+                font-size: 15px;
+                color: gray;
+                text-align: center;
+                position: absolute;
+                bottom: -25%;
+                left: 27%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:375px){
+    .main_div{
+        flex-direction: column;
+        width: 95% !important;
+        height: 95% !important;
+        .left{
+            .screen_logo{
+                height: 200px !important;
+            }
+        }
+        .middle {
+            height: 2px !important;
+            width: 80% !important;
+            background-color: rgb(231, 228, 228);
+            border-radius: 2px;
+            margin: 0px !important;
+            display: none;
+           
+        }
+        .right{
+            // width: fit-content;
+            .input_field{
+                width: 290px   !important ;
+                // padding: 8px !important;
+                outline: none;
+                border-radius: 40px;
+                border: 1px solid lightgray;
+                // position: relative;
+                margin-bottom: 15px !important;
+                color: lightgray;
+            }
+            .icon1{
+                top: 22% !important;
+            }
+            .icon2{
+                top: 44% !important;
+            }
+           
+            .button{
+                
+                margin-bottom: 15px;
+            }
+            .forget_pass{
+               margin-top: 0px !important;
+            }
+            .privacy_policy{
+                bottom: -10% !important;
+                left: 25% !important;
+                font-size: 12px !important;
+            }
+            .get_help{
+                font-size: 12px !important;
+            }
+        }
+    }
+}
