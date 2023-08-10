@@ -8,13 +8,18 @@
     background-image: url('../../images/backgroundImage.png');
     // background-color: aqua;
     height: 100vh;
-    
     width: 100vw;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    .logo{
+        height: 60px;
+        position: absolute;
+        top: 5px;
+        
+    }
 
     .main_div{
         height: 80%;
@@ -43,7 +48,8 @@
             flex-direction: column;
             max-width: fit-content;
             width: 100%;
-                position: relative;
+            position: relative;
+           
 
             // align-items: center;
             .horizontal_line{
@@ -124,10 +130,13 @@
 }
 
 @media only screen and (max-width:398px){
+    .logo{
+  top: 15px !important;
+    }
     .main_div{
         flex-direction: column;
         width: 95% !important;
-        height: 95% !important;
+        height: 75% !important;
         .left{
             .screen_logo{
                 height: 200px !important;
@@ -144,14 +153,14 @@
            
         }
         .right{
-            // width: fit-content;
+            bottom: 60px !important;
             .input_field{
                 width: 290px   !important ;
-                // padding: 8px !important;
+               
                 outline: none;
                 border-radius: 40px;
                 border: 1px solid lightgray;
-                // position: relative;
+                
                 margin-bottom: 15px !important;
                 color: lightgray;
             }
@@ -180,3 +189,64 @@
         }
     }
 }
+
+
+
+// @media only screen and (max-width:1038px){
+//     .main_div{
+//         flex-direction: column;
+//         width: 75% !important;
+//         height: 95% !important;
+//         .left{
+//             .screen_logo{
+//                 height: 245px !important;
+//             }
+//         }
+//         .middle {
+//             height: 2px !important;
+//             width: 80% !important;
+//             background-color: rgb(231, 228, 228);
+//             border-radius: 2px;
+//             margin: 0px !important;
+//             display: none;
+            
+           
+//         }
+//         .right{
+//             // width: fit-content;
+//             .input_field{
+//                 width: 550px   !important ;
+//                 padding: 18px !important;
+//                 outline: none;
+//                 border-radius: 40px;
+//                 border: 1px solid lightgray;
+//                 // position: relative;
+//                 margin-bottom: 15px !important;
+//                 color: lightgray;
+//             }
+//             .icon1{
+//                 top: 22% !important;
+//             }
+//             .icon2{
+//                 top: 44% !important;
+//             }
+           
+//             .button{
+                
+//                 margin-bottom: 15px;
+//                 padding: 18px !important;
+//             }
+//             .forget_pass{
+//                margin-top: 0px !important;
+//             }
+//             .privacy_policy{
+//                 bottom: -10% !important;
+//                 left: 37% !important;
+//                 font-size: 12px !important;
+//             }
+//             .get_help{
+//                 font-size: 12px !important;
+//             }
+//         }
+//     }
+// }
